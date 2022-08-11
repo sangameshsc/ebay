@@ -1,0 +1,154 @@
+
+body{
+    line-height: 1.5;
+}
+.A-footer {
+    background-color:white;
+    padding-left: 60px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.A-container{
+    max-width:1170px;
+    margin:auto;
+}
+
+ul{
+    list-style:none;
+}
+
+.A-footer-row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.A-footer-col{
+    width: 20%;
+    padding: 0px;
+}
+
+
+
+.A-footer-col h4{
+    /* font-family:'Courier New', Courier, monospace; */
+    font-size:18px;
+    color:rgba(0, 0, 0, 1.0);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight:500;
+    position:relative;
+}
+
+ .A-footer-col h4::before{
+    content: '';
+    position :absolute;
+    left:0;
+    bottom:-10px;
+    background-color:rgba(0, 0, 0, 1.0)
+    height : 2px;
+    box-sizing : border-box;
+    width : 50px;
+    
+} 
+
+.A-footer-col ul li:not(:last-child){
+    margin-bottom :10px;
+}
+.A-footer-col ul li a{
+    font-size:15px;
+    color:rgba(0,0,0, 0.5);
+    text-decoration:none;
+    font-weight: 300;
+    display:block;
+   
+}
+
+.A-footer-col ul li a:hover{
+    color:#24262b;
+    padding-left: 10px;
+}
+.A-footer-col .social-links a{
+
+    height :40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+}
+
+.social {
+    font-size:12px;
+    color:rgba(0,0,0, 0.5);
+    text-decoration:none;
+    font-weight: 300;
+    display:block;
+} 
+
+.A-footer-col .social-links a:hover{
+    color:#24262b;
+    background-color:#ffffff;
+}
+
+.A-last{
+    font-size:18px;
+    color:rgba(0, 0, 0, 1.0);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight:500;
+    position:relative;
+    overflow: hidden;
+
+}
+
+p{
+    
+    font-size:15px;
+    font-weight: 300;
+    color:rgba(0, 0, 0, 0.5);
+    margin-top:30px;
+    margin-bottom:30px;
+    display:flex;
+}
+.paragraph-text{
+    text-decoration:underline;
+}
+
+.and{
+    text-decoration:none; 
+}
+.paragraph-container{
+    display:flex;
+    flex-direction: row;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .A-footer-col {
+        width:50%;
+        margin-bottom :30px;
+    }
+}
+@media(max-width: 574px){
+    .A-footer-col {
+        width:100%;
+        margin-left: 20px;
+    }
+
+    .A-footer {
+        background-color:white;
+        /*padding: 100px 50px 50px 100px;*/
+    }
+    body{
+        line-height: 1.5;
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    }
+
+
+}
